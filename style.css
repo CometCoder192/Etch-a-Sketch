@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+button {
+    transition: 300ms;
+    background-color: lightblue;
+    border: none;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    margin: auto;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button:hover {
+    transition: 300ms;
+    opacity: 0.6;
+}
+/*This includes the important flex part*/
+
+.container {
+    border: 1px solid black;
+    width: 500px; /*height and width are absolute to fit perfectly at the center*/
+    height: 500px;
+    margin: auto; /*centers it horizontally*/
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%; /*this makes sure that elements take up all the vertical space available to them.*/
+}
+.elem {
+    border: 1px solid black;
+    flex: 1; /*this makes sure that elements take up all the horizontal space available to them*/
+}
